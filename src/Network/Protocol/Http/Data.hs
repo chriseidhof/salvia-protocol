@@ -127,7 +127,7 @@ uri = _uri . headline
 -- true URI data type.
 
 asUri :: Http Request :-> Uri
-asUri = (toUri <-> show) `iso` uri
+asUri = (toUri <-> show) % uri
 
 -- | Label to access the status part of an HTTP response message.
 

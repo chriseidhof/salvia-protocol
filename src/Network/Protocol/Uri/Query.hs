@@ -14,7 +14,7 @@ type Parameters = [(String, Maybe String)]
 -- | Fetch the query parameters form a URI.
 
 queryParams :: Uri :-> Parameters
-queryParams = params `iso` _query
+queryParams = params % _query
 
 -- | Generic lens to parse/print a string as query parameters.
 
